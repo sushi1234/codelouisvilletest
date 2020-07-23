@@ -4,48 +4,133 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css"href="CSS/style4.css">
   <title>Document</title>
 </head>
-<body>
- 
-  <div class="topnav">
-    <a href="#home">
-      <i class="fas fa-house-user icon"></i>
-      Home</a>
-    <a href="#cats">
-      <i class="fas fa-cat icon"></i>
-      Cat Photo Gallery</a>
-    <a href="#dogs">
-      <i class="fas fa-dog icon"></i>
-      Dog Photo Gallery</a>
-  </div>
-<div class="row" id="cats">
-  <div class="column">
-    <marquee><img src='https://images.unsplash.com/photo-1569051394699-b0fcb46547fd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
-    </marquee><div class="info-box">
-    <p>Title: Happiness</p>
-    <p><marquee>Photographer: Sagarika N</marquee></p>
-    <p>Year: 1996</p>
-    </div>
-  </div>
- 
-  <div class="column">
-<img src='https://images.unsplash.com/photo-1559625703-1f9c7760e056?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
-    <div class="info-box">
-    <p>Title: Happiness</p>
-    <p>Photographer: Sagarika N</p>
-    <p>Year: 1996</p>
-    </div>
-  </div>
- 
-  <div class="column">
-<img src='https://images.unsplash.com/photo-1559444395-13a4869b5bcb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>  
-    <div class="info-box">
-    <p>Title: Happiness</p>
-    <p>Photographer: Sagarika N</p>
-    <p>Year: 1996</p>
-    </div>
-  </div>
-</div>
   
+<body>
+  
+
+  
+  <div class="panel-container" style= "position:absolute; right:0; top:0">
+    <div class="left">
+      <h2>Hotel</h2>
+      <h3>Arrival</h3>
+      
+            
+    
+      <button><p id="p1"></p></button>
+      <button><p id="p2"></p></button>
+      <p> March 1st 2021, 7.20pm</p>
+      <h3>departure</h3>
+      <h3>march3rd</h3>
+      <h3>room</h3>
+      <p>buisness suite</p>     
+         
+      
+      <button><a href="contact3.html">Sign up</a></button>
+      
+        
+    </div>
+  </div>
+
+    
+
+
+    <div class="right" style="position:absolute;width:10%; background-color:rgb(89, 0, 255)">
+          
+      <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+           -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          
+
+
+      
+      <nav class="menu" style="width: 40%; display:flex;justify-content:space-between;margin-right:20vw">
+		<a href="#home" class="item_menu">home</a>
+		<a href="#about" class="item_menu">about</a>
+		<a href="#services" class="item_menu">services</a>
+		<a href="gallery.html" class="item_menu">Gallery</a>
+    <a href="contact3.html" class="item_menu">contact</a>
+        </nav>-->
+
+
+        
+        <ul id="menu">
+          <a href="Index.html"><li>Home</li></a>
+          <a href="gallery.html"><li>Gallery</li></a>
+          <a href="services.html"><li>Service</li></a>
+          <a href="contact3.html"><li>Contact</li></a>
+          <a href="http://www.facebook.com" target="_blank"><li>Show me more</li></a>
+          <div>
+                          <label>Change Webpage Background click:</label>
+                          <button type="button" onclick="changeBodyBg('pink');">pink</button>
+                          <button type="button" onclick="changeBodyBg('blueviolet');">blueviolet</button>
+                          <button type="button" onclick="changeBodyBg('lightgreen');">lightgreen</button>
+                  
+          </div>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+  
+                        
+        
+
+       <!----<div class="row group">
+          <div id="home" class="home">
+            <h2>home</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum arcu nisl, at vestibulum purus cursus ultrices. Sed consectetur faucibus velit, quis ultrices nisi.</p>
+            <p>Donec rutrum magna mi, vitae congue elit egestas quis. Praesent ultrices rhoncus venenatis. </p>
+          </div>
+          <div id="about" class="about">
+            <h2>about</h2>
+            <p>nteger scelerisque nisl sit amet eleifend mollis. Fusce eu tristique massa, et vehicula risus. Fusce congue convallis enim eget dignissim. Quisque auctor erat et.</p>
+            <p>Nulla faucibus, vel lacinia ex lacinia. Nunc ut odio mattis magna vulputate viverra et et ligula.</p>
+          </div>
+          <div id="services" class="services">
+          <h2>services</h2>
+            <p>nteger scelerisque nisl sit amet eleifend mollis. Fusce eu tristique 
+              massa, et vehicula risus. Fusce congue convallis enim eget dignissim.
+               Quisque auctor erat et.
+            </p>
+            <p>Nulla faucibus, vel lacinia ex lacinia. Nunc ut odio mattis magna vulputate
+               viverra et et ligula.</p>
+          </div>  
+
+    </div>-->
+
+    
+  
+
+
+
+    
+  </div class="footer" style="position:absolute; right:0; top:0; width:100%"> 
+
+
+          <p>Footer</p>
+      </div>
+     <script src="script.js"></script>
+      
+    </body>
+    <!--<script src="script.js"></script>-->      
+</html>
