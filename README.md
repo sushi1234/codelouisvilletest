@@ -1,5 +1,5 @@
 Description of my Project: 
-I have tried to create a hotel website project for customers to check in and check out. I just ike to get our attention to look for some of the functionality in my webpage.
+I have tried to create a hotel website project for customers to check in and check out. I just ike to get your attention to look for some of the functionality in my webpage.
 
 This website updates current date and time everytime the webpage loads on right side of panel container. 
 I added one hamburger menu to go to diffent pages like home, picture gallery, contact form and service pages.
