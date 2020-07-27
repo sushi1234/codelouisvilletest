@@ -1,0 +1,57 @@
+
+ body
+ {
+   margin: 0;
+   padding: 0;
+   
+   /* make it look decent enough */
+   background: white;
+   color: blueviolet;
+   font-family: "Avenir Next", "Avenir", sans-serif,red;
+ }
+/* Used CSS selector  to style series of 
+elements like changing the color of each column
+ when we click the corresponding menu*/
+ :root
+ {
+   font--family:blueviolet;
+ background-color:blueviolet;
+ }
+ 
+ /*:target
+ {
+ background:brown;
+ }*/
+ #room:target
+{
+Background:blue;
+Color:initial;
+Box-shadow:0 0 6px rgba(0,0,0, 0.2);
+}
+
+
+
+#guests:target
+{
+Background:red;
+Color:initial;
+Box-shadow:0 0 6px rgba(0,0,0, 0.2);
+}
+
+
+
+#catering:target
+{
+Background:green;
+Color:initial;
+Box-shadow:0 0 6px rgba(0,0,0, 0.2);
+}
+
+
+Input:not([type=”submit”])
+{
+Box-shadow: inset 0 2px 0 rgba(0,0,0,0.15);
+}
+
+
+ 
