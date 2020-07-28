@@ -78,25 +78,14 @@ document.write(z);*/
         return false;
     }*/
 
-/*var button = document.querySelector('button');
-var body = document.querySelector('body');
-var colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple'];
-body.style.backgroundColor = 'violet';
-button.addEventListener('click', changeBackground());
 
-function changeBackground()
-{
-var colorIndex= parseInt(Math.random()*colors.length+1);
-var colorIndex= parseInt(Math.random()*colors.length);
-body.style.backgroundColor = colors[colorIndex];
-}*/
 
  // Function to change webpage background color
  function changeBodyBg(color){
     document.body.style.background = color;
 }
 
-// Function to change heading background color
+
 function changeHeadingBg(color){
     document.getElementById("heading").style.background = color;
 }
