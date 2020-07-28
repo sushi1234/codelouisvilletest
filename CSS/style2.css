@@ -7,12 +7,13 @@
    /* make it look decent enough */
    background: white;
    color: blueviolet;
-   font-family: "Avenir Next", "Avenir", sans-serif,red;
+   font-family: "Avenir Next", "Avenir", sans-serif, pink;
  }
  nav a
  {
    padding:15px;
    margin:15px;   
+   border:solid;
  }
  nav
  {
@@ -20,12 +21,15 @@
    justify-content:center;
    margin:0px;
    padding:0px;
+   
  }
  h2
  {
-   margin: 20px;
-   padding:30px;
+   margin: 5px;
+   padding:5px;
    display:flex;
+   border:solid;
+   
  }
 /* Used CSS selector  to style series of 
 elements like changing the color of each column
@@ -33,7 +37,7 @@ elements like changing the color of each column
  :root
  {
    font-family:blueviolet;
- background-color:blueviolet;
+ background-color:rgb(134, 122, 145);
  }
  
  /*:target
@@ -42,7 +46,7 @@ elements like changing the color of each column
  }*/
  #room:target
 {
-Background:blue;
+Background:lightblue;
 Color:initial;
 Box-shadow:0 0 6px rgba(0,0,0, 0.2);
 }
@@ -51,16 +55,16 @@ Box-shadow:0 0 6px rgba(0,0,0, 0.2);
 
 #guests:target
 {
-Background:red;
+Background:lightgreen;
 Color:initial;
 Box-shadow:0 0 6px rgba(0,0,0, 0.2);
 }
 
 
 
-#catering:target
+#cateringmenu:target
 {
-Background:green;
+Background:skyblue;
 Color:initial;
 Box-shadow:0 0 6px rgba(0,0,0, 0.2);
 }
