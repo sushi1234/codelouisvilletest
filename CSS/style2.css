@@ -9,12 +9,30 @@
    color: blueviolet;
    font-family: "Avenir Next", "Avenir", sans-serif,red;
  }
+ nav a
+ {
+   padding:15px;
+   margin:15px;   
+ }
+ nav
+ {
+   display:flex;
+   justify-content:center;
+   margin:0px;
+   padding:0px;
+ }
+ h2
+ {
+   margin: 20px;
+   padding:30px;
+   display:flex;
+ }
 /* Used CSS selector  to style series of 
 elements like changing the color of each column
  when we click the corresponding menu*/
  :root
  {
-   font--family:blueviolet;
+   font-family:blueviolet;
  background-color:blueviolet;
  }
  
