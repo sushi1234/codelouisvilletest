@@ -15,8 +15,9 @@ var time = today.getHours() + ":"+ today.getMinutes() + ":" +today.getSeconds();
 var date = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
 var time = today.getHours() + ":"+ today.getMinutes() + ":" +today.getSeconds();
 var dateTime = date+' '+time;
-document.getElementById("p1").innerHTML = date;
-document.getElementById("p2").innerHTML = time;
+
+document.getElementById("p1").innerHTML = Date();
+/*document.getElementById("p2").innerHTML = current();*/
 
 
 
@@ -39,7 +40,7 @@ function validateForm1()
      
     document.write("your last name is:"+" "+ y.fontsize(10) +" "+"and the number of alphabets are:"+" "+y.length);
     
-    document.write("the concatention of first name and last name is: "+" "+ x.fontsize(10) + y. fontsize(10));
+    document.write("the concatention of first name and last name is: "+" "+ x.fontsize(10) +" "+ y. fontsize(10));
 
 
   }
