@@ -17,7 +17,7 @@ body
 }
 body
 {
-  /*background-image:url('../Image/michael-monahan-WzXAiovhE2M-unsplash.jpg');*/
+  background-image:url('../Image/michael-monahan-WzXAiovhE2M-unsplash.jpg');
   background-color:skyblue;
   background-repeat:no-repeat;
   background-size:cover;
@@ -27,13 +27,13 @@ body
   width:100vw;
   z-index:-1;
 }
-@media only screen and (max-width: 700px)
+@media only screen and (max-width: 768px)
  {
   body 
   {
-    background-color: pink;
+    background-color: red;
   }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (-width: 265px) {
     body 
     {
       font-weight: bold;
@@ -64,7 +64,7 @@ body
  background: url(https://uploads0.wikiart.org/images/raphael/self-portrait.jpg)
   center no-repeat;
   background-size:cover;
-}
+  }
 
 #van-gogh {
   background: url(https://janeadamsart.files.wordpress.com/2013/05/sketch-of-sandro-botticelli-self-portrait-1.jpg)
@@ -186,7 +186,7 @@ body
   top:0%;
   bottom:0%;
   left:0%;
-  height:80%;
+  height:70%;
   width:40%;
 }
 
@@ -201,21 +201,16 @@ body
   width:calc(50% + 20px);
   top:0;
   right:0;
-}
-.nav
+}*/
+/*.navigation
 {
-  background-image:url('../Image/ahmed-yaaniu-RDnYlufMFAw-unsplash.jpg');
-  display:flex;
+  /*background-image:url('../Image/ahmed-yaaniu-RDnYlufMFAw-unsplash.jpg');
+  display:none;;
   float: left;
   color: white;
   padding: 14px 16px;
   text-decoration:none;
   font-size: 17px;
-}
-/*.nav menu
-{
-  display:none;
-
 }*/
 
 /*h2 {
@@ -242,53 +237,10 @@ background: whitesmoke;
    width: 100%;
    background-color:red;
    text-align:center;
-}
-/*div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
 }*/
+
+
+  
 
 #menuToggle
 {
@@ -299,6 +251,7 @@ div.desc {
   
   z-index: 1;
   
+  
   -webkit-user-select: none;
   user-select: none;
 }
@@ -308,19 +261,22 @@ div.desc {
   text-decoration: none;
   color: #232323;
   
+  
   transition: color 0.3s ease;
+
 }
 
 #menuToggle a:hover
 {
   color: tomato;
+   
 }
 
 
 #menuToggle input
 {
-  display: block;
-  width: 40px;
+  display:block;
+  width: 20px;
   height: 32px;
   position: absolute;
   top: -7px;
@@ -339,7 +295,7 @@ div.desc {
  */
 #menuToggle span
 {
-  display: block;
+  display:block;
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
@@ -359,12 +315,15 @@ div.desc {
 
 #menuToggle span:first-child
 {
-  transform-origin: 0% 0%;
+  transform-origin: 100% 0%;
+  
+  
 }
 
 #menuToggle span:nth-last-child(2)
 {
-  transform-origin: 0% 100%;
+  transform-origin: 0% 0%;
+  
 }
 
 /* 
@@ -376,6 +335,7 @@ div.desc {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
+  
 }
 
 /*
@@ -384,6 +344,7 @@ div.desc {
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
+  
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
@@ -393,6 +354,7 @@ div.desc {
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
   transform: rotate(-45deg) translate(0, -1px);
+  
 }
 
 /*
@@ -402,35 +364,42 @@ div.desc {
 #menu
 {
   position:relative;
-  width: 300px;
+  width: -300px;
   margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  
-  
-  background: #ededed;
+  padding: 0px;
+  padding-top: 0px;
+  top:0;
+  right:0;
+  background:#fff;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
+  
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(-100%, 0%);
+  
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li
 {
-  padding: 10px 0;
+  padding: 0px 0;
   font-size: 22px;
   text-decoration:underline;
   border:5px solid pink;
-}
+  overflow:hidden;
+  right:0;
+  top:0;
+  
+  }
 
 /*
  * And let's slide it in from the left
  */
 #menuToggle input:checked ~ ul
 {
-  transform: none;
+  transform:none;
+   
 }
