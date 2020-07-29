@@ -19,8 +19,8 @@
  {
    display:flex;
    justify-content:center;
-   margin:0px;
-   padding:0px;
+   margin:1px;
+   padding:10px;
    
  }
  h2
@@ -76,4 +76,14 @@ Box-shadow: inset 0 2px 0 rgba(0,0,0,0.15);
 }
 
 
- 
+@media only screen and (max-device-width: 480px) {
+  body {
+      width: 400px;
+  }
+}
+
+@media only screen and (max-device-width: 780px) {
+  body {
+      width: 400px;
+  }
+}
