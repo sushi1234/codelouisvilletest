@@ -1,6 +1,6 @@
 Description of my Project: 
-I have tried to create a hotel website project for customers use. Some of the
-Project requirements I tried to follow.
+I have tried to create a hotel website project for customer use. Some of the following
+functionality I have tried to implement in my project..
 
 * Created Javascript Date() fuction in (script.js) to update date and time everytime webpage(Index.html) loads on right side of panel container.
 
