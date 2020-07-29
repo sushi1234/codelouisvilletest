@@ -8,12 +8,13 @@ functionality I have tried to implement in my project..
 
 * I have used css selector in services.html to change background color of each row when we click the top menu.
 
+* Included javascript function to change the background color of webpage by clicking three different color buttons. 
+
 * Images scrolls through (gallery.html) horizontally in picture gallery(gallery.html).
 
 * Used Javascript math operations like concatenation of first name and last name. when we click submit button  in (contact4.html) and it adds up all the alphabets and shows the total number of alphabets and firstname space lastname.
 
 * Added hamburger menu to go to diffent pages like home, picture gallery, contact form and service pages.
-* Included three clickable buttons to change background color webpage.
 
 * If you hover on menu list all the menu list changes to red tamato color. 
 
