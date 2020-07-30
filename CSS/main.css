@@ -1,0 +1,413 @@
+/* Main.CSS is used for styling my project*/
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+*
+{
+  margin:0;
+  padding:0;
+}
+body
+{
+  font-family:'Do Hyeon', sans-serif;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  margin:0;
+  padding:0;
+  float:right;
+  list-style-type:none;
+}
+body
+{
+  background-image:url('../Image/michael-monahan-WzXAiovhE2M-unsplash.jpg');
+  background-color:skyblue;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-size:center;
+  filter:blur;
+  height:100vh;
+  width:100vw;
+  z-index:-1;
+}
+
+.frame {
+  display:inline-block;  
+  width:180px;
+  height:260px;
+  background:#fff;
+
+  border:5px black solid;
+  padding:20px;
+  margin:20px;
+
+  box-shadow:none;
+  transform: none;
+}
+
+.painting {
+  width:100%;
+  height:100%;
+}
+
+
+#mona-lisa {
+ background: url(https://uploads0.wikiart.org/images/raphael/self-portrait.jpg)
+  center no-repeat;
+  background-size:cover;
+  }
+
+#van-gogh {
+  background: url(https://janeadamsart.files.wordpress.com/2013/05/sketch-of-sandro-botticelli-self-portrait-1.jpg)
+  center no-repeat;
+  background-size:cover;
+}
+
+#frida-kahlo
+{
+     background: url(https://s4.scoopwhoop.com/anj/paintings/778914987.jpg)
+     /*https://i.pinimg.com/originals/56/a4/f8/56a4f8facba4b2a790bd9887de0e044b.jpg*/
+   center no-repeat;
+  background-size:cover;
+}
+
+
+
+
+/*.header 
+{
+  display:flex;
+  margin:0;
+  padding:0;
+  background-color: black;
+  height:40%;
+  width:40%;
+  color:black;
+  float : right;
+  justify-content:center;
+}
+.header p 
+{
+  display: box;
+  background-color: red;
+  font-size:10;
+  height:50%;
+  width:50%;
+}*/
+/*.frame {
+  display:inline-block;  
+  width:180px;
+  height:260px;
+  background:#fff;
+
+  border:5px black solid;
+  padding:20px;
+  margin:20px;
+
+  box-shadow:none;
+  transform: none;
+}*/
+
+.form
+{
+  display: box;
+  position:absolute;
+  margin:0;
+  padding:0;
+  background-color:black;
+  color:#8529ac;
+  float :left;
+  justify-content:center;
+  box-shadow: 0 0 6px rgba(0,0,0,.2);
+}
+.panel-container
+{
+  background: lightseagreen;
+  display:flex;
+  height:100vh;
+  position:absolute;
+  width:20vw;
+  box-shadow:-15px 22px 44px 0px rgba(58,34,143,1);  
+  }
+.right
+{
+  
+  flex-direction:column;
+  padding:40px;
+  position:absolute;
+  width:calc(50% - 10px);
+  color:white;
+  border:solid;
+}
+
+.right h2
+{
+  margin:0;
+  padding:0;
+}
+ 
+.right h3
+{
+  border-bottom:1px solid #333;
+  font-size:16px;
+  margin:30px 0 0;
+}
+
+.right p
+{
+  color: white;
+  font-size:13px;
+  margin:3px 0;
+}
+.right button
+{
+  background: white;
+  border:1px solid #8e44ad;
+  color:white;
+  cursor:pointer;
+  padding:15px 50px;
+  margin-top:auto;
+  
+}
+.left
+{
+  /*border-top:0 solid transparent;
+  border-bottom:70vh solid transparent;*/
+  border-left:30px solid #222;
+  border:solid;
+  content:"";
+  position:absolute;
+  top:0%;
+  bottom:0%;
+  left:0%;
+  height:70%;
+  width:40%;
+}
+
+/*.right 
+{  
+  background-image:url('../Image/ahmed-yaaniu-RDnYlufMFAw-unsplash.jpg');
+  ('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:absolute;
+  width:calc(50% + 20px);
+  top:0;
+  right:0;
+}*/
+/*.navigation
+{
+  /*background-image:url('../Image/ahmed-yaaniu-RDnYlufMFAw-unsplash.jpg');
+  display:none;;
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration:none;
+  font-size: 17px;
+}*/
+
+/*h2 {
+  margin: 0 0 30px 0;
+}*/
+/*:root
+{
+background: #8529ac;
+}
+
+:target
+{
+background: whitesmoke;
+}*/
+/*.footer 
+{
+  margin:0;
+  padding:0;
+  display:box;
+   position:absolute;
+   top:0;
+   left:0;
+   bottom:0;
+   width: 100%;
+   background-color:red;
+   text-align:center;
+}*/
+
+
+  
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  
+  transition: color 0.3s ease;
+
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+   
+}
+
+
+#menuToggle input
+{
+  display:block;
+  width: 20px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display:block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: black;;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 100% 0%;
+  
+  
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 0%;
+  
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+  
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+  
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position:relative;
+  width: -300px;
+  margin: -100px 0 0 -50px;
+  padding: 0px;
+  padding-top: 0px;
+  top:0;
+  right:0;
+  background:lightgoldenrodyellow;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  visibility: hidden;
+  
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0%);
+  
+  
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 0px 0;
+  font-size: 22px;
+  text-decoration:underline;
+  border:5px solid pink;
+  overflow:hidden;
+  right:0;
+  top:0;
+  
+  
+  
+  }
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform:none;
+  visibility: visible;
+   
+}
+@media only screen and (max-device-width: 480px) {
+  body {
+      width: 400px;
+  }
+}
+@media only screen and (max-device-width: 800px) {
+  body {
+      width: 400px;
+  }
+}
