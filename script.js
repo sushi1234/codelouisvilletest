@@ -1,7 +1,7 @@
 
 
 
-/*Javascript function to show current date and time in interval of seconds*/
+/*Javascript function to show current date and time in interval of seconds in Index.html*/
 
 
 function showTime()
@@ -15,19 +15,28 @@ setInterval(showTime, 1000);
 
 
 
-/* Validation of form in contact4.html*/
+/* Validation of form in Contact4.html*/
 
 
 
   function validate()
    {
       
-    if( document.myForm.Name.value == "" ) 
+    if( document.myForm.fName.value == "" ) 
     {
        alert( "Please provide your name!" );
-       document.myForm.Name.focus() ;
+       document.myForm.fName.focus() ;
        return false;
-    }
+    }    
+    
+
+    if( document.myForm.lName.value == "" ) 
+    {
+       alert( "Please provide your name!" );
+       document.myForm.lName.focus();
+       return false;
+    }   
+    
 
   var emailID = document.myForm.EMail.value;
   x = emailID.indexOf("@");
@@ -36,12 +45,10 @@ setInterval(showTime, 1000);
   if (x < 1 || ( y - x < 2 ))
    {
      alert("Please enter correct email ID")
-     document.myForm.EMail.focus() ;
+     document.myForm.EMail.focus();
      return false;
   }
   
- 
-
     if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
        document.myForm.Zip.value.length != 5 ) 
        {
@@ -58,8 +65,10 @@ setInterval(showTime, 1000);
     return( true );
  
   }
- 
 
+
+  
+   
 
 /*validation of user can't leave blank
 
