@@ -1,18 +1,18 @@
-
+/* Service.css used for only services.html page*/
  body
  {
    margin: 0;
    padding: 0;
    
    /* make it look decent enough */
-   background: white;
+   background:lightskyblue;
    color: blueviolet;
    font-family: "Avenir Next", "Avenir", sans-serif, pink;
  }
  nav a
  {
-   padding:15px;
-   margin:15px;   
+   padding:5px;
+   margin:5px;   
    border:solid;
  }
  nav
@@ -25,11 +25,24 @@
  }
  h2
  {
-   margin: 5px;
-   padding:5px;
+   margin: 2px;
+   padding:2px;
    display:flex;
    border:solid;
+
    
+ }
+
+ 
+ .header
+ {
+  position:absolute;
+  left:0;
+  bottom:0;
+  width: 100%;
+  background-color:lightcoral;
+  text-align:center;
+  font-size:20px;
  }
 /* Used CSS selector  to style series of 
 elements like changing the color of each column
@@ -46,25 +59,28 @@ elements like changing the color of each column
  }*/
  #room:target
 {
-Background:lightblue;
+Background:pink;
 Color:initial;
 Box-shadow:0 0 6px rgba(0,0,0, 0.2);
 }
-
-
 
 #guests:target
 {
-Background:lightgreen;
+Background:cyan;
 Color:initial;
 Box-shadow:0 0 6px rgba(0,0,0, 0.2);
 }
 
-
+#covid:target
+{
+Background:red;
+Color:initial;
+Box-shadow:0 0 6px rgba(0,0,0, 0.2);
+}
 
 #cateringmenu:target
 {
-Background:skyblue;
+Background:green;
 Color:initial;
 Box-shadow:0 0 6px rgba(0,0,0, 0.2);
 }
