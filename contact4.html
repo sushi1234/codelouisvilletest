@@ -7,42 +7,77 @@
   <link rel="stylesheet" type="text/css"href="CSS/main.css">
   <title>Document</title>
 </head>
-  
+  <!-- created a small table for entering all information-->
 <body>
-    <form name="myForm1" action="/action_page.php" onsubmit="return validateForm1()" method="post">
-FirstName: <input type="text" name="fname">
-<!--<input type="submit" value="Submit"></form>-->
+  <form action = "" name = "myForm" onsubmit = "return(validate());">
+    <table cellspacing = "8" cellpadding = "10" border = "4" background-color = "blue">
+       
+       <tr>
+          <td align = "right">Name</td>
+          <td><input type = "text" name = "Name" /></td>
+       </tr>
 
-<!--<form name="myForm2" action="/action_page.php" onsubmit="return validateForm2()" method="post">-->
-  LastName: <input type="text" name="lname">
-  <input type="submit" value="Submit">
+          
+       <tr>
+          <td align = "right">EMail</td>
+          <td><input type = "text" name = "EMail" /></td>
+                 </tr>
+                 
+       
+       <tr>
+          <td align = "right">Zip Code</td>
+          <td><input type = "text" name = "Zip" /></td>
+       </tr>
+       
+       <tr>
+          <td align = "right">Country</td>
+          <td>
+             <select name = "Country">
+                <option value = "-1" selected>[choose yours]</option>
+                <option value = "1">USA</option>
+                <option value = "2">UK</option>
+                <option value = "3">INDIA</option>
+             </select>
+          </td>
+       </tr>
+       
+       <tr>
+          <td align = "right"></td>
+          <td><input type = "submit" value = "Submit" /></td>
+       </tr>
+       
+    </table>
+
+    
+    </form>
+ </form>      
   
-  </form>
-<!--<h1>Email Validation in javascript</h1>
-	<span id="errormsg"></span>-->
-<form name="emailform" onsubmit="return email_function()">
-	
-	<label>Email</label>
-	<input type="text" name="email" value="">
-	<input type="submit" name="" value="Submit">
-</form>
-
+    
 <script src="script.js"></script>
 
-<div class="footer" style="position:absolute; left:0; bottom:0; width:100%; background-color:white"> 
-
+<div class="header">
 
   <p>CONTACT</p>
-  <a href="Index.html"class="item_menu">home</a> 
+  
           <a href="Index.html">Home</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="services.html">Service</a>
           <a href="contact4.html">Contact</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="services.html">Service</a>    
 
-<a href="http://www.facebook.com" class="item_menu">Facebook</a>  
-<a href="http://www.twitter.com" class="item_menu">twitter</a></div> 
+
 
 </div>
+
+<div class="footer">
+          
+  <marquee><a href="services.html">Welcome to Magical stay!! Covid-19 emergency information!!</a>
+  
+          <a href="Index.html"class="item_menu">Home</a>  
+          <a href="contact4.html"class="item_menu">Contact us</a>
+          <a href="http://www.facebook.com" class="item_menu">Facebook</a>  
+          <a href="http://www.twitter.com" class="item_menu">twitter</a></div></marquee> 
+           </div>
+
 
 
 </body>
