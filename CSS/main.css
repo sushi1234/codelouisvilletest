@@ -1,4 +1,5 @@
 /* Main.CSS is used for styling my project*/
+/*service.css is used for styling only services.html page*/
 
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 *
@@ -73,27 +74,8 @@ body
 
 
 
-/*.header 
-{
-  display:flex;
-  margin:0;
-  padding:0;
-  background-color: black;
-  height:40%;
-  width:40%;
-  color:black;
-  float : right;
-  justify-content:center;
-}
-.header p 
-{
-  display: box;
-  background-color: red;
-  font-size:10;
-  height:50%;
-  width:50%;
-}*/
-/*.frame {
+  
+.frame {
   display:inline-block;  
   width:180px;
   height:260px;
@@ -105,19 +87,19 @@ body
 
   box-shadow:none;
   transform: none;
-}*/
+}
 
 .form
 {
-  display: box;
+  display:flex;
   position:absolute;
   margin:0;
   padding:0;
   background-color:black;
   color:#8529ac;
-  float :left;
-  justify-content:center;
+  justify-content:right;
   box-shadow: 0 0 6px rgba(0,0,0,.2);
+  border:solid;
 }
 .panel-container
 {
@@ -195,54 +177,41 @@ body
   top:0;
   right:0;
 }*/
-/*.navigation
-{
-  /*background-image:url('../Image/ahmed-yaaniu-RDnYlufMFAw-unsplash.jpg');
-  display:none;;
-  float: left;
-  color: white;
-  padding: 14px 16px;
-  text-decoration:none;
-  font-size: 17px;
-}*/
 
-/*h2 {
-  margin: 0 0 30px 0;
-}*/
-/*:root
+.header
 {
-background: #8529ac;
+   position:absolute;
+   right:0;
+   top:0;
+   width: 100%;
+   background-color:lightpink;
+   text-align:center;
+   font-size:20px;
+   border:solid;
+   
 }
 
-:target
+.footer
 {
-background: whitesmoke;
-}*/
-/*.footer 
-{
-  margin:0;
-  padding:0;
-  display:box;
-   position:absolute;
-   top:0;
-   left:0;
-   bottom:0;
-   width: 100%;
-   background-color:red;
-   text-align:center;
-}*/
+  position:absolute;
+  left:0;
+  bottom:0;
+  width: 100%;
+  background-color:lightcoral;
+  text-align:center;
+  font-size:20px;
 
-
-  
+}
 
 #menuToggle
 {
-  display: block;
-  position: relative;
+  display:block;
+  position:absolute;
   top: 50px;
   left: 50px;
   
   z-index: 1;
+
   
   
   -webkit-user-select: none;
@@ -253,8 +222,6 @@ background: whitesmoke;
 {
   text-decoration: none;
   color: #232323;
-  
-  
   transition: color 0.3s ease;
 
 }
@@ -342,7 +309,7 @@ background: whitesmoke;
 }
 
 /*
- * Ohyeah and the last one should go the other direction
+ * the last one should go the other direction
  */
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
@@ -361,7 +328,7 @@ background: whitesmoke;
   margin: -100px 0 0 -50px;
   padding: 0px;
   padding-top: 0px;
-  top:0;
+  top:10px;
   right:0;
   background:lightgoldenrodyellow;
   list-style-type: none;
@@ -372,6 +339,7 @@ background: whitesmoke;
   
   transform-origin: 0% 0%;
   transform: translate(-100%, 0%);
+  border:solid;
   
   
   
@@ -386,9 +354,7 @@ background: whitesmoke;
   border:5px solid pink;
   overflow:hidden;
   right:0;
-  top:0;
-  
-  
+  top:0; 
   
   }
 
